@@ -5,10 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>РумТибет</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="menu">
-
+        <header>
+            <img src="/material/logo.svg">
+            <div class="link_menu">
+                <ul class="link">
+                    <li>Главная</li>
+                    <li>Про гида</li>
+                    <li>Программа тура</li>
+                    <li>Стоимость</li>
+                    <li>Блог</li>
+                    <li>Контакты</li>
+                </ul>
+                <button class="green_button">Консультация</button>
+            </div>
+        </header>
+        <h1>Насладись прогулкой в горах с командой единомышленников</h1>
+        <nav>
+            <select id="location" name="location">
+                <option value="location">Локация для тура</option>
+                <option value="notwork">Отсутствует</option>
+            </select>
+            <label for="location">выберите из списка</label>
+            <select id="data" name="data">
+                <option value="data">Дата похода</option>
+                <option value="notwork">Отсутствует</option>
+            </select>
+            <label for="data">укажите диапозон</label>
+            <select id="ocation" name="location">
+                <option value="location">Участники</option>
+                <option value="notwork">Отсутствует</option>
+            </select>
+            <label for="ocation">минимум 4 человека</label>
+            <button>Найти программу</button>
+        </nav>
     </div>
     <div class="content">
         
