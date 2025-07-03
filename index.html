@@ -11,8 +11,10 @@
     <div class="menu">
         <header>
             <img src="material/logo.svg">
-            <div class="link_menu">
+            <button class="link_button" id="openBtn"></button>
+            <div class="link_menu" id="anim">
                 <ul class="link">
+                    <button class="lock_button" id="closeBtn"></button>
                     <li><a href="">Главная</a></li>
                     <li><a href="">Про гида</a></li>
                     <li><a href="">Программа тура</a></li>
@@ -256,5 +258,21 @@
         <p>ИП Константинопольский К.К., 2023</p>
         <a>Политика обработки персональных данных</a>
     </div>
+    <script>
+    const panel = document.getElementById('panel');
+    const openBtn = document.getElementById('openBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    openBtn.addEventListener('click', () => {
+        anim.style.left = '84px';
+    });
+    closeBtn.addEventListener('click', () => {
+        anim.style.left = '374px';
+    });
+    const anim = document.getElementById('anim');
+    const offset = 20;
+     window.addEventListener('scroll', () => {
+    anim.style.top = window.scrollY + offset + 'px';
+  });
+</script>
 </body>
 </html>
